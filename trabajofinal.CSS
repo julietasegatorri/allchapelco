@@ -1,0 +1,53 @@
+*{margin: 0}
+
+body{ background-color: rgb(248, 248, 245);  font-family: 'Trebuchet MS';}
+header{ background-color: rgb(248, 248, 245); text-align: center;display: flex;justify-content: center;justify-content: space-between; font-size: larger;}
+nav ul{ display: flex;  list-style: none;}
+nav ul a{color: #141313; text-decoration: none; display: inline-flex; padding: 20px; text-align: right;}
+main{background-color:white (248, 248, 245); text-align: center;} 
+.logo {width: 350px; text-align: left; display: flex;}
+
+
+/* aca se definen las 4 columnas*/
+.caja{ display: inline-block; margin: 5%; background-color: rgb(248, 248, 245);  border: 1px solid#fcfafa; box-sizing: border-box; text-align: center;}
+.imgcaja{ width: 100%;}
+
+
+.foto{width: 50%;}
+.planos {width: 45%;}
+.informacion {margin: 0%;}
+.informacion h2 {margin: 10px;}
+
+
+footer {background-color: #141313;color:white;padding: 10px;font-size: small;}
+
+/*aca el icono se pone arriba a la derecha*/
+.icono {display: none; color: #141313; position: absolute; top: 10px;right: 10px;}
+
+/*laptop*/
+@media (max-width: 1024px)
+{nav ul a {padding: 20px; text-align: right;}}
+
+
+/*tabletas*/
+@media(max-width: 768px)
+{.caja {width: 90%;}
+header {display: block; text-align: center}
+nav {display: block;}}
+
+/*celulares*/
+@media(max-width: 480px)
+{.caja {width: 90%;}
+nav ul {display: block; text-align: right;}
+nav {display:none}
+nav ul a {display: block; padding: 5px; text-align: center;}
+
+/*aca se agranda la foto*/
+.planos {width: 100%;}
+
+/*aca oculto la barra de navegacion*/
+.icono {display: block; text-align: center; } 
+
+/*aca se cambia la clase para mostrar el menu*/
+.mostrarmenu {display: block; text-align: center; }}
+

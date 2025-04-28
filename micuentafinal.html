@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title> All Chapelco departamentos </title>
+<meta name="viewport" content="width=devicewidth,initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="trabajofinal.CSS"> 
+</head>
+<body>
+   
+    <header>
+        <a href="index.HTML"><img class="logo" src="logo sin fondo.png"/></a>
+       <a href="#" class="icono" onclick="MiFuncion()"> 
+       <i class="fa fa-bars"></i> </a>
+
+        <nav id="navegador" class="">
+
+            <ul>
+            <il><a href="productofinla.HTML.html">producto </a></il>
+           <il><a href="cuentafinal.HTML">cuenta </a></il>
+            <il><a href="contantofinal.HTML">contacto </a></il>
+            </ul>
+        <nav>
+    </header>
+    <footer>
+        <h2> seguinos</h2>
+        <h2> <i class=" fa fa-whatsapp"> </i> +54 911 5578 6706</h2>
+        <h2> <i class="fa fa-instagram"> </i> @allchapelco</h2>
+    </footer>
+    <script>
+        function MiFuncion() 
+          /* aquí se define el ID del elemento que va a tomar la clase*/
+          {var x = document.getElementById("navegador");
+          if (x.className === "") 
+          
+             /* esta es la clase que se agrega al elemento con el*/
+             {id="navegador"
+            x.className += "mostrarmenu";} else {x.className = "";}}
+        </script> 
+    </body>

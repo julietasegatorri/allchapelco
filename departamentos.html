@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<title> All Chapelco departamentos </title>
+<meta name="viewport" content="width=devicewidth,initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="trabajofinal.CSS"> 
+</head>
+<body>
+   
+    <header>
+        <a href="index.HTML"><img class="logo" src="logo sin fondo.png"/></a>
+       <a href="#" class="icono" onclick="MiFuncion()"> 
+       <i class="fa fa-bars"></i> </a>
+
+        <nav id="navegador" class="">
+
+            <ul>
+            <il><a href="productofinla.HTML.html">producto </a></il>
+            <il><a href="cuentafinal.HTML">cuenta </a></il>
+            <il><a href="contantofinal.HTML">contacto </a></il>
+            </ul>
+        <nav>
+    </header>
+    <main> 
+
+        <h2> Los departamentos se entregan completamente equipados, listo para su uso</h2>
+        <div class="caja">
+          <img src="monoambiente.jpg" class="imgcaja"> 
+            <h2>monoambiente</h2>
+            <h3>$400</h3>
+
+        </div>
+    <div class="caja">
+           <img src="dosambientes.jpg" class="imgcaja"> 
+            <h2>dos ambientes</h2>  
+            <h3>$700</h3>
+        </div>
+
+        <div class="caja">
+            <img src="planos.jpg" class="planos"> 
+           <h3>Planos del proyecto</h3>  
+         </div>
+
+        <div class="caja">
+           <img src="mapaubicacion.jpg" class="imgcaja"> 
+            <h2> Ubicacion privilegiada Av. Belgrano 650</h2>
+            <h3>A una cuadra de la avenida principal y a 10 de Lago Lacar</h3>
+        </div>
+<div>
+   <div class="caja">
+   <h1>Servivios cercanos </h1>
+   <h3>comisaria 23</h3>
+   <h3>Ramon Castillo Regional Hospital</h3>
+   <h3>centro medico San Martin</h3>
+   </div>
+   <div class="caja">
+    <h1>Accesos y transporte </h1>
+    <h3>taxis</h3>
+    <h3>colectivos locales</h3>
+    <h3>omnibus</h3>
+</div>
+</div>
+    </main>
+
+
+    <footer>
+        <h2> seguinos</h2>
+        <h2> <i class=" fa fa-whatsapp"> </i> +54 911 5578 6706</h2>
+        <h2> <i class="fa fa-instagram"> </i> @allchapelco</h2>
+    </footer>
+    <script>
+        function MiFuncion() 
+          /* aquí se define el ID del elemento que va a tomar la clase*/
+          {var x = document.getElementById("navegador");
+          if (x.className === "") 
+          
+             /* esta es la clase que se agrega al elemento con el*/
+             {id="navegador"
+            x.className += "mostrarmenu";} else {x.className = "";}}
+        </script> 
+    </body>
+    
