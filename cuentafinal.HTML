@@ -10,7 +10,10 @@
    
     <header>
         <a href="index.html"><img class="logo" src="logo sin fondo.png"/></a>
-        <nav>
+        <a href="#" class="icono" onclick="MiFuncion()"> 
+            <i class="fa fa-bars"></i> </a>
+     
+        <nav id="navegador" class="">
             <ul>
             <il><a href="productofinla.HTML.html">producto </a></il>
            <il><a href="cuentafinal.HTML">cuenta </a></il>
@@ -19,11 +22,21 @@
         <nav>
     </header>
     <main> 
-
+<h1>CUENTA</h1>
     </main>
-</body>
 <footer>
     <h2> seguinos</h2>
     <h2><i class=" fa fa-whatsapp"> </i> +54 911 5578 6706</h2>
     <h2><i class="fa fa-instagram"> </i> @allchapelco</h2>
 </footer>
+<script>
+    function MiFuncion() 
+      /* aquí se define el ID del elemento que va a tomar la clase*/
+      {var x = document.getElementById("navegador");
+      if (x.className === "") 
+      
+         /* esta es la clase que se agrega al elemento con el*/
+         {id="navegador"
+        x.className += "mostrarmenu";} else {x.className = "";}}
+    </script>
+    </body> 
