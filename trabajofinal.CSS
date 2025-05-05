@@ -44,7 +44,7 @@ nav {display: block;}}
 nav ul {display: block; text-align: right;}
 nav {display:none}
 nav ul a {display: block; padding: 5px; text-align: center;}
-.fotoluciano {width: 25%;border-radius: 10px}
+.fotoluciano {width: 30%;border-radius: 10px}
 
 /*aca se agranda la foto*/
 .planos {width: 100%; border-radius: 10px}
