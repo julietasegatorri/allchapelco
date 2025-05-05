@@ -31,12 +31,23 @@
          </div>
 
          <div class="caja informacion">
-            <h2>All Chapelco es un proyecto moderno y sustentable desarrollado un espacio compromentido con el medio ambiente,
+            <p>All Chapelco es un proyecto moderno y sustentable desarrollado un espacio compromentido con el medio ambiente,
                 utilizando los materiales adecuados para resolver detalles. 
-                Te ofrecemos departamentos con la maxima rentabilidad </h2>
-            <h2>metodos de pago</h2>
-            <h3>dolares</h3>
-            <h3>pago en cuotas</h3>
+                Te ofrecemos departamentos con la maxima rentabilidad. Con pagos en cuotas y posibilidad de obtener ingresos en dolares en rentas </p>
+         
+                <p>All Chapelco es una construccion moderna, de maximo confort y estilo en el corazon de San martin de los Andes</p>
+               
+                <div class="contenedor">
+                    <img src="lucianokruk.jpg" class="fotoluciano">
+               
+                   
+                  <p>El arquitecto del proyecto es Lucia Kruk, arquitecto Aegentino. Se destaca por su enfoque en la arquitectura contemporanea y el uso distintivo del hormigon visto, como es el caso de All Chapelco</p>
+                </div>
+
+                
+                   
+        
+              
          </div>
 
     </main>
@@ -55,5 +66,44 @@
              {id="navegador"
             x.className += "mostrarmenu";} else {x.className = "";}}
         </script> 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const sliderContenedor = document.querySelector('.slider-contenedor');
+              const slider = document.querySelector('.slider');
+              const slides = document.querySelectorAll('.slide');
+              const botonAnterior = document.querySelector('.boton-anterior');
+              const botonSiguiente = document.querySelector('.boton-siguiente');
+           
+              let indiceActual = 0;
+              const numSlides = slides.length;
+           
+              function actualizarSlider() {
+                slider.style.transform = `translateX(-${indiceActual * 100}vw)`;
+                actualizarBotones();
+              }
+           
+              function actualizarBotones() {
+                botonAnterior.disabled = indiceActual === 0;
+                botonSiguiente.disabled = indiceActual === numSlides - 1;
+              }
+           
+              botonAnterior.addEventListener('click', function() {
+                if (indiceActual > 0) {
+                  indiceActual--;
+                  actualizarSlider();
+                }
+              });
+           
+              botonSiguiente.addEventListener('click', function() {
+                if (indiceActual < numSlides - 1) {
+                  indiceActual++;
+                  actualizarSlider();
+                }
+              });
+           
+              // Inicializar el slider
+              actualizarSlider();
+          });
+          </script>
     </body>
     
