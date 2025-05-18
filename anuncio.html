@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<title> All Chapelco departamentos </title>
+<meta name="viewport" content="width=devicewidth,initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="anuncio.css"> 
+
+<body>
+    <header>
+</header>
+<main>
+    <h1>Compra tu departamento de pozo</h1>
+    <div>
+        <img src="01. SMA FRENTE.jpg" class="foto"> 
+        <h4>Entrega en enero del 2026</h4>
+
+        <p>1 cochera  </p>
+        <p>1 baño  </p>
+        <p> 1 living comedor </p>
+        <p> 1 dormitorio </p>
+    </div>
+    <div class="slider-contenedor">
+        <div class="slider">
+          <div class="slide"><img src="09. SMA SUM.jpg"></div>
+          <div class="slide"><img src="12. SMA INTERIOR 3.jpg"></div>
+          <div class="slide"><img src="07. ACCESO 2.jpg"></div>
+        </div>
+        <button class="boton-anterior">Anterior</button>
+        <button class="boton-siguiente">Siguiente</button>
+      </div>
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sliderContenedor = document.querySelector('.slider-contenedor');
+      const slider = document.querySelector('.slider');
+      const slides = document.querySelectorAll('.slide');
+      const botonAnterior = document.querySelector('.boton-anterior');
+      const botonSiguiente = document.querySelector('.boton-siguiente');
+   
+      let indiceActual = 0;
+      const numSlides = slides.length;
+   
+      function actualizarSlider() {
+        slider.style.transform = `translateX(-${indiceActual * 100}vw)`;
+        actualizarBotones();
+      }
+   
+      function actualizarBotones() {
+        botonAnterior.disabled = indiceActual === 0;
+        botonSiguiente.disabled = indiceActual === numSlides - 1;
+      }
+   
+      botonAnterior.addEventListener('click', function() {
+        if (indiceActual > 0) {
+          indiceActual--;
+          actualizarSlider();
+        }
+      });
+   
+      botonSiguiente.addEventListener('click', function() {
+        if (indiceActual < numSlides - 1) {
+          indiceActual++;
+          actualizarSlider();
+        }
+      });
+   
+      // Inicializar el slider
+      actualizarSlider();
+  });
+  </script>
+
+
+
+
+
+
+
+</body>
