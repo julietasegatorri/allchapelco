@@ -1,97 +1,80 @@
-<!doctype html>
-<html>
+
 <head>
-<title> All Chapelco departamentos </title>
-<meta name="viewport" content="width=devicewidth,initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="anuncio.css"> 
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html"> 
+    <title>Anuncio Promocional All Chapelco</title>
+    <style>
+        /* Estilos para el anuncio promocional */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;}
+        
+        .anuncio-promocional {
+           background-color: black;
+            padding: 30px 0;
+            width: 100%}
+       
+        .contenedor-anuncio {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 20px;}
+        
+        .logo-anuncio img {
+            height: 80px;
+            width: auto;}
+        
+        .texto-anuncio h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin: 0;}
+        
+        .boton-anuncio .btn-comprar {
+            background-color: #232323;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border-radius: 5px;}
+        
+        .boton-anuncio .btn-comprar:hover {
+            background-color: white;
+            transform: scale(1.05);}
+        
+        
+        
+    </style>
+</head>
 <body>
-    <header>
-</header>
-<main>
-    <img class="logo" src="logo sin fondo.png"/></a>
-
-    <h1>Compra tu departamento de pozo</h1>
-    <div>
-        <img src="01. SMA FRENTE.jpg" class="foto"> 
-        <h4>Entrega en enero del 2026</h4>
-
-        <p>1 cochera  </p>
-        <p>1 baño  </p>
-        <p> 1 living comedor </p>
-        <p> 1 dormitorio </p>
-    </div>
-
-    <div class="slider-contenedor">
-        <div class="slider">
-          <div class="slide"><img src="09. SMA SUM.jpg"></div>
-          <div class="slide"><img src="12. SMA INTERIOR 3.jpg"></div>
-          <div class="slide"><img src="07. ACCESO 2.jpg"></div>
+    <!-- Sección de anuncio promocional -->
+    <div class="anuncio-promocional">
+        <div class="contenedor-anuncio">
+            <div class="logo-anuncio">
+                <img src="logo sin fondo.png" alt="logoAllChapelco">
+            </div>
+            <div class="texto-anuncio">
+                <h3>departamentos de pozo</h3>
+            </div>
+            <div class="boton">
+                <a href ="index.html" class="boton" target="_blanck">ver</a>
+            </div>
         </div>
-        <button class="boton-anterior">Anterior</button>
-        <button class="boton-siguiente">Siguiente</button>
-      </div>
-
-      <div class="contenedor2">
-        <img src="logo sin fondo.png"> 
-        <h1> Departamentos en San Martin De los Andes</h1>
-         <a href="https://julietasegatorri.github.io/allchapelco/" target="_blank"
-        class="boton"> VER</a>
-       </div>
-
-</main>
-
-<footer>
-    <h2> seguinos</h2>
-    <h2> <i class=" fa fa-whatsapp"> </i> +54 911 5578 6706</h2>
-    <h2> <i class="fa fa-instagram"> </i> @allchapelco</h2>
-</footer>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const sliderContenedor = document.querySelector('.slider-contenedor');
-      const slider = document.querySelector('.slider');
-      const slides = document.querySelectorAll('.slide');
-      const botonAnterior = document.querySelector('.boton-anterior');
-      const botonSiguiente = document.querySelector('.boton-siguiente');
-   
-      let indiceActual = 0;
-      const numSlides = slides.length;
-   
-      function actualizarSlider() {
-        slider.style.transform = `translateX(-${indiceActual * 100}vw)`;
-        actualizarBotones();
-      }
-   
-      function actualizarBotones() {
-        botonAnterior.disabled = indiceActual === 0;
-        botonSiguiente.disabled = indiceActual === numSlides - 1;
-      }
-   
-      botonAnterior.addEventListener('click', function() {
-        if (indiceActual > 0) {
-          indiceActual--;
-          actualizarSlider();
-        }
-      });
-   
-      botonSiguiente.addEventListener('click', function() {
-        if (indiceActual < numSlides - 1) {
-          indiceActual++;
-          actualizarSlider();
-        }
-      });
-   
-      // Inicializar el slider
-      actualizarSlider();
-  });
-  </script>
-
-
-
-
-
-
-
+    </div>
 </body>
+</html>
+
+
+

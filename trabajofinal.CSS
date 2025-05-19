@@ -8,6 +8,9 @@ main{background-color:white (248, 248, 245); text-align: center;}
 .logo {width: 350px; text-align: left; display: flex;}
 
 
+.marcoanuncio {width: 728px; height: 90px; display: block; margin: 25px auto; text-align: center; }
+
+
 /* aca se definen las 4 columnas*/
 .caja{ display: inline-block; margin: 5%; background-color: rgb(248, 248, 245);  border: 1px solid#fcfafa; box-sizing: border-box; text-align: center;}
 .imgcaja{ width: 100%;border-radius: 10px}
@@ -18,6 +21,7 @@ main{background-color:white (248, 248, 245); text-align: center;}
 .planos {width: 45%; border-radius: 10px}
 .informacion {margin: 0%;}
 .informacion h2 {margin: 10px;}
+.contenedor-anuncio{width: 80px;}
 
 .contenedor { display: flex; align-items: center; max-width: 800px; margin: 50px auto;}
 .contenedor img { max-width: 300px; height: auto; margin-right: 20px; border-radius: 10px;}
@@ -27,10 +31,14 @@ footer {background-color: #141313;color:white;padding: 10px;font-size: small;}
 /*aca el icono se pone arriba a la derecha*/
 .icono {display: none; color: #141313; position: absolute; top: 10px;right: 10px;}
 
+form{width: 60%; margin: auto; }
+input, select {width: 90%; padding: 10px; box-sizing: border-box;border: 1px solid; text-align: center; }
+
+
 /*laptop*/
 @media (max-width: 1024px)
 {nav ul a {padding: 20px; text-align: right;}}
-
+label {float: left; width: 30%;}
 
 /*tabletas*/
 @media(max-width: 768px)
@@ -44,8 +52,10 @@ nav {display: block;}}
 nav ul {display: block; text-align: right;}
 nav {display:none}
 nav ul a {display: block; padding: 5px; text-align: center;}
-.fotoluciano {width: 30%;border-radius: 10px;}}
-
+.fotoluciano {width: 30%;border-radius: 10px;}
+label {display: none;}
+.marcoanuncio {width: 300px; height: 600px; display: inline; text-align: center;}
+.boton { text-align: center;}
 
 
 /*aca se agranda la foto*/
@@ -55,7 +65,7 @@ nav ul a {display: block; padding: 5px; text-align: center;}
 .icono {display: block; text-align: center; } 
 
 /*aca se cambia la clase para mostrar el menu*/
-.mostrarmenu {display: block; text-align: center; }
+.mostrarmenu {display: block; text-align: center; }}
 
 .slider-contenedor {
     position: relative; /* Para posicionar los botones dentro */
