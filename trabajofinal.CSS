@@ -44,7 +44,8 @@ nav {display: block;}}
 nav ul {display: block; text-align: right;}
 nav {display:none}
 nav ul a {display: block; padding: 5px; text-align: center;}
-.fotoluciano {width: 30%;border-radius: 10px}
+.fotoluciano {width: 30%;border-radius: 10px;}}
+
 
 
 /*aca se agranda la foto*/
@@ -54,7 +55,7 @@ nav ul a {display: block; padding: 5px; text-align: center;}
 .icono {display: block; text-align: center; } 
 
 /*aca se cambia la clase para mostrar el menu*/
-.mostrarmenu {display: block; text-align: center; }}
+.mostrarmenu {display: block; text-align: center; }
 
 .slider-contenedor {
     position: relative; /* Para posicionar los botones dentro */

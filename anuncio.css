@@ -3,6 +3,9 @@
 body{ background-color: rgb(248, 248, 245);  font-family: 'Trebuchet MS';}
 header{ background-color: rgb(248, 248, 245); text-align: center;display: flex;justify-content: center;justify-content: space-between; font-size: larger;}
 main{background-color:white (248, 248, 245); text-align: center;} 
+.logo {width: 350px; text-align: left; display: flex;}
+footer {background-color: #141313;color:white;padding: 10px;font-size: small;}
+
 
 
 
