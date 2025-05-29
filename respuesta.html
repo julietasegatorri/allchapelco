@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<title> All Chapelco departamentos </title>
+<meta name="viewport" content="width=devicewidth,initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="trabajofinal.CSS"> 
+</head>
+<body>
+   
+    <header>
+        <a href="index.html"><img class="logo" src="logo sin fondo.png"/></a>
+       <a href="#" class="icono" onclick="MiFuncion()"> 
+       <i class="fa fa-bars"></i> </a>
+
+        <nav id="navegador" class="">
+
+            <ul>
+            <il><a href="productofinla.HTML.html">producto </a></il>
+            <il><a href="sobrenosotros.html">sobre nosotros</a></il>
+            <il><a href="contantofinal.HTML">contacto </a></il>
+            </ul>
+        <nav>
+
+
+
+    </header>
+    <main> 
+       
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f5f2;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .gracias-container {
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        a.volver {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        a.volver:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="gracias-container">
+        <h1>¡Gracias por tu mensaje!</h1>
+        <p>Nos pondremos en contacto contigo lo antes posible.</p>
+        <a class="volver" href="index.html">Volver al inicio</a>
+    </div>
+
+        
+    </main>
+    <footer>
+        
+        <h2> <i class=" fa fa-whatsapp"> </i> +54 911 5578 6706</h2>
+        <h2> <i class="fa fa-instagram"> </i> @allchapelco</h2>
+    </footer>
+    <script>
+        function MiFuncion() 
+          /* aquí se define el ID del elemento que va a tomar la clase*/
+          {var x = document.getElementById("navegador");
+          if (x.className === "") 
+          
+             /* esta es la clase que se agrega al elemento con el*/
+             {id="navegador"
+            x.className += "mostrarmenu";} else {x.className = "";}}
+        </script> 
+    </body>
