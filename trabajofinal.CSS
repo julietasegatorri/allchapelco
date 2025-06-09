@@ -4,17 +4,17 @@ body{ background-color: rgb(248, 248, 245);  font-family: 'Trebuchet MS';}
 header{ background-color: rgb(248, 248, 245); text-align: center;display: flex;justify-content: center;justify-content: space-between; font-size: larger;}
 nav ul{ display: flex;  list-style: none;}
 nav ul a{color: #141313; text-decoration: none; display: inline-flex; padding: 20px; text-align: right;}
-main{background-color:white (248, 248, 245); text-align: center;} 
+main{background-color:white (248, 248, 245); text-align: center; padding: 30px;justify-content: center; } 
 .logo {width: 350px; text-align: left; display: flex;}
 
 
-.marcoanuncio {width: 728px; height: 90px; display: block; margin: 25px auto; text-align: center; }
+.marcoanuncio {width: 728px; height: 90px; display: block; margin: 25px auto;  }
 .fotos {display: inline; width: 100%;}
 
 .contenedora{display: flex; flex-flow: wrap; justify-content: center;}
 /* aca se definen las 4 columnas*/
-.caja{ display: inline-block; width: 42%; margin: 3%; background-color: rgb(248, 248, 245);  border: 1px solid#fcfafa; box-sizing: border-box; text-align: center;}
-.imgcaja{ width: 100%;border-radius: 10px}
+.caja{ display: block; width: 100%; margin: 3%; background-color: rgb(248, 248, 245);  border: 1px solid#fcfafa; box-sizing: border-box; text-align: center; }
+.imgcaja{ width: 100%;border-radius: 10px;}
 
 
 .foto{width: 100%; border-radius: 10px}
@@ -24,22 +24,28 @@ main{background-color:white (248, 248, 245); text-align: center;}
 .informacion h2 {margin: 10px;}
 .contenedor-anuncio{width: 80px;}
 
-.contenedor { display: flex; align-items: center; max-width: 800px; margin: 50px auto;}
-.contenedor img { max-width: 300px; height: auto; margin-right: 20px; border-radius: 10px;}
-p{margin-bottom: 16px; line-height: 1.5; font-size: larger;}
+.contenedora { display: flex; align-items: center; max-width: 800px; margin: 80px auto; flex-flow: wrap;}
+.caja3 {max-width: 800px; margin: auto;}
+.caja2 {display: block; width: 42%; margin: 3%; background-color: rgb(248, 248, 245);  border: 1px solid#fcfafa; box-sizing: border-box; text-align: center; }
+.contenedor { display: flex; align-items: center; max-width: 800px; margin: 80px auto; flex-flow: wrap;}
+.contenedor img {height: auto; margin-right: 20px; border-radius: 10px;}
+.contenedora p, p{margin-bottom: 16px; line-height: 1.5; font-size: larger; width: 60%; text-align: center;}
 footer {background-color: #141313;color:white;padding: 10px;font-size: small;}
+
+form p {width: 100%;}
+
 
 /*aca el icono se pone arriba a la derecha*/
 .icono {display: none; color: #141313; position: absolute; top: 10px;right: 10px;}
 
 form{width: 60%; margin: auto; }
-input, select {width: 90%; padding: 10px; box-sizing: border-box;border: 1px solid; text-align: center; }
+input, select {width: 100%; padding: 10px; box-sizing: border-box;border: 1px solid; text-align: center; }
 
 
 /*laptop*/
 @media (max-width: 1024px)
-{nav ul a {padding: 20px; text-align: right;}}
-label {float: left; width: 30%;}
+{nav ul a {padding: 20px; text-align: right;}
+label {float: left; width: 30%;}}
 
 /*tabletas*/
 @media(max-width: 768px)
@@ -49,7 +55,7 @@ nav {display: block;}}
 
 /*celulares*/
 @media(max-width: 480px)
-{.caja {width: 90%;}
+{.caja {width: 90%;} 
 nav ul {display: block; text-align: right;}
 nav {display:none}
 nav ul a {display: block; padding: 5px; text-align: center;}
