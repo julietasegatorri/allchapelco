@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<title> All Chapelco departamentos </title>
+<meta name="viewport" content="width=devicewidth,initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="presentacionm4.css"> 
+</head>
+<body>
+    <header>
+    </header>
+
+    <main> 
+      <h2>JULIETA SEGATORRI</h2>
+        <h2>COMUNICACION DIGITAL</h2>
+        <h2>CONTENIDOS Y CREATIVIDAD 1</h2>
+        <h2> PROF. WENCESLAO ZAVALA</h2>
+
+        <img class="imagen" src="logo sin fondo.png"/>
+
+        <h2>ALL CHAPELCO ES UN PROYECTO INMOBILIARIO EN SAN MARTIN DE LOS ANDES</h2>
+
+        <img class="imagen" src="01. SMA FRENTE.jpg">
+
+        <div class="caja">
+            <h1> TARGET</h1>
+            <h3> - PERSONAS MAYORES A 40</h3>
+            <h3> - PODER ADQUISITIVO ALTO</h3>
+            <h3> - TODOS LOS GENEROS</h3>
+            <h3> - EMPRESARIOS Y QUE VIVAN DEL CAMPO</h3>
+        </div>
+        
+
+        <div class="caja"> 
+          <h1> OBJETIVOS</h3>  
+          <h3> - MOSTRAR LOS DEPARTAMENTOS</h3>
+          <h3> - EL ARQUITECTO</h3>
+          <h3> - MODERNO</h3>
+          <h3> - DONDE SE ESTA HACIENDO</h3>
+        </div>
+
+
+        <div class="PROPUESTA">
+          <h1> PROPUESTA</h1>
+          <h3>TRANSMITIR DE MANERA EMOCIONAL (INVERSION A FUTURO, HORAR, SEGURIDAD) Y EXPERIENCIAL (CALIDAD DE VIDA, COMODIDAD, CERCANIA A PUNTOS CLAVES)</h3>
+          </div>
+
+
+
+<div class="slider-contenedor">
+            <div class="slider">
+              <div class="slide"><img src="12. SMA INTERIOR 3.jpg"></div>
+              <div class="slide"><img src="09. SMA SUM.jpg"></div>
+              <div class="slide"><img src="05. SMA PARRILLA.jpg"></div>
+            </div>
+            <button class="boton-anterior"> < </button>
+            <button class="boton-siguiente"> > </button>
+          </div>
+
+
+
+
+
+
+          <h1 class="COLOR"> PALETA DE COLOR</h1>
+          <div class="PALETA1">
+            <h3> BLANCO</h3>
+          </div>
+           <div class="PALETA2"> 
+           <h3> NEGRO </h3>
+            </div>
+
+ <div class="mapa">
+            <img  class="mapa"     src="mapa de sitio.png">
+          </div>
+ 
+          <h1> EMAIL</h1>
+<img  class="email"   src="Captura de pantalla 2025-06-24 a la(s) 9.24.43 a. m..png">
+
+
+<div class="PRESUPUESTO">
+  <h1> PRESUPUESTO </h1>
+  <h3> EL PRESUPUESTO DEL SITIO WEB "ALL CHAPELCO" IMPLICÓ UNA INVERSIÓN DE 720.01 USD + 4800 ARS ANUALES DE HOSTING, CONSIDERANDO 48 HORAS DE TRABAJO A 15 USD LA HORA </h3>
+ 
+</div>
+          
+
+      
+          
+
+    </main>
+
+    <footer>
+        <h1> JULIETA SEGATORRI</h1>
+        <a class="link" href="https://julietasegatorri.github.io/allchapelco/"> ALL CHAPELCO</a>
+    </footer>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const sliderContenedor = document.querySelector('.slider-contenedor');
+          const slider = document.querySelector('.slider');
+          const slides = document.querySelectorAll('.slide');
+          const botonAnterior = document.querySelector('.boton-anterior');
+          const botonSiguiente = document.querySelector('.boton-siguiente');
+       
+          let indiceActual = 0;
+          const numSlides = slides.length;
+       
+          function actualizarSlider() {
+            slider.style.transform = `translateX(-${indiceActual * 100}vw)`;
+            actualizarBotones();
+          }
+       
+          function actualizarBotones() {
+            botonAnterior.disabled = indiceActual === 0;
+            botonSiguiente.disabled = indiceActual === numSlides - 1;
+          }
+       
+          botonAnterior.addEventListener('click', function() {
+            if (indiceActual > 0) {
+              indiceActual--;
+              actualizarSlider();
+            }
+          });
+       
+          botonSiguiente.addEventListener('click', function() {
+            if (indiceActual < numSlides - 1) {
+              indiceActual++;
+              actualizarSlider();
+            }
+          });
+       
+          // Inicializar el slider
+          actualizarSlider();
+      });
+      </script>
+
+
+
+
+
+
+</body>
