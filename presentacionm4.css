@@ -18,6 +18,10 @@ main{background-color:white (248, 248, 245); text-align: center; padding: 30px;f
 .email {width: 75%; margin: 25px;}
 .mapa {width: 95%; margin: 25px;}
 
+.marcoanuncio {width: 728px; height: 90px; display: block; margin: 25px auto;}
+
+
+
 /*laptop*/
 @media (max-width: 1024px)
 
@@ -32,7 +36,8 @@ main{background-color:white (248, 248, 245); text-align: center; padding: 30px;f
 .logo {width: 250px}
 .caja {width: 90%;}
 .imagen {width: 100%;}
-.mapa {width: 90%;}}
+.mapa {width: 90%;}
+.marcoanuncio {width: 300px; height: 600px; display: inline; text-align: center;}}
 
 
 
